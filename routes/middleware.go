@@ -33,9 +33,9 @@ func (r *Routes) Auth(handler func(u *models.User, r *http.Request) (int, []byte
 			return
 		}
 
-		krid := raw.(*ID)
+		id := raw.(*ID)
 
-		u, err := r.Users.Find(req.Context(), krid.UUID)
+		u, err := r.Users.Find(req.Context(), id.UUID)
 
 		if err != nil {
 			resp.WriteHeader(http.StatusUnauthorized)
