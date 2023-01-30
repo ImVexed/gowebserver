@@ -1,4 +1,4 @@
-// Package server defines the framework OneChat server object
+// Package server defines the server object
 package server
 
 import (

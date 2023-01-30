@@ -1,4 +1,4 @@
-// Package config handles loading settings into OneChat
+// Package config handles loading settings
 package config
 
 import (

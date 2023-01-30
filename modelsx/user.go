@@ -32,7 +32,7 @@ var (
 	UserValidateEdit = &UserValidator{makeValidator("validateedit")}
 )
 
-// User objects represent user accounts in OneChat
+// User objects represent user accounts
 type User struct {
 	ID        string      `validateedit:"-"                      self-in:"-"            self-out:"id"                 user-out:"id"`
 	Username  null.String `validateedit:"omitempty,min=2,max=64" self-in:"username"     self-out:"username,omitempty" user-out:"username,omitempty"`
